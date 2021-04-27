@@ -1,9 +1,0 @@
-[submodule "server-diveschedule"]
-	path = server-diveschedule
-	url = git@github.com:subaquatic-pierre/server-diveschedule.git
-[submodule "client-diveschedule"]
-	path = client-diveschedule
-	url = git@github.com:subaquatic-pierre/client-diveschedule.git
-[submodule "infrastructure-diveschedule"]
-	path = infrastructure-diveschedule
-	url = git@github.com:subaquatic-pierre/infrastructure-diveschedule.git
