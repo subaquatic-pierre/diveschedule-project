@@ -1,0 +1,6 @@
+{
+  "python.venvPath": "venv/bin/activate",
+  "git.ignoreLimitWarning": true,
+  "python.pythonPath": "venv/bin/python",
+  "cSpell.ignoreWords": ["set", "TripDetail"]
+}
