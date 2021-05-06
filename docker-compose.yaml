@@ -33,7 +33,6 @@ services:
         - REACT_APP_URI=$REACT_APP_URI
     ports:
       - "8000:80"
-      - "5432:5432"
     links:
       - db
 
