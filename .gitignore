@@ -4,6 +4,7 @@ config.json
 db.sqlite
 data.json
 .vscode
+data
 
 # dependencies
 node_modules
