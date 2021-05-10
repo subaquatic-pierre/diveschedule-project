@@ -38,7 +38,7 @@ services:
         - REACT_APP_URI=$REACT_APP_URI
         - DB_ENGINE=$DB_ENGINE
     ports:
-      - "80:8000"
+      - "8000:8000"
     volumes:
       - ./server-diveschedule:/app
     links:
@@ -47,12 +47,14 @@ services:
   client:
     build:
       context: client-diveschedule
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
       args:
         - REACT_APP_DEV_ENV=$REACT_APP_DEV_ENV
-        - REACT_APP_URI=http://localhost/graphql/
+        - REACT_APP_URI=http://localhost:8000/graphql/
     ports:
       - "3000:5000"
+    volumes:
+      - ./client-diveschedule:/app
     depends_on:
       - api
     links:

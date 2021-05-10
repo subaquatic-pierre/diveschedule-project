@@ -5,6 +5,7 @@ db.sqlite
 data.json
 .vscode
 data
+.env
 
 # dependencies
 node_modules
