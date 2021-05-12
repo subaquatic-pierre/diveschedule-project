@@ -30,4 +30,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .env
-db.sqlitediveschedule.code-workspace
+db.sqlite
+diveschedule.code-workspace
