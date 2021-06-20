@@ -43,6 +43,5 @@ services:
       - "8000:8000"
     volumes:
       - ./server-diveschedule:/app
-      - ./data/log/api:/var/log/api
     links:
       - db
