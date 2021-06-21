@@ -31,7 +31,7 @@ aws s3 cp build/ s3://scubadivedubai.com/ --recursive --acl public-read
 #### Invalidate cloudfront cache
 
 ```bash
-aws cloudfront create-invalidation --distribution-id EFYX3XEFZBGN4 --paths "/*"
+aws cloudfront create-invalidation --distribution-id 000000000 --paths "/*"
 ```
 
 #### Clear contents of current html on server
