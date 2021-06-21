@@ -33,3 +33,15 @@ aws s3 cp build/ s3://scubadivedubai.com/ --recursive --acl public-read
 ```bash
 aws cloudfront create-invalidation --distribution-id EFYX3XEFZBGN4 --paths "/*"
 ```
+
+#### Clear contents of current html on server
+
+```bash
+ssh -i ~/.ssh/aws-main-us-east-2.pem ubuntu@10.0.0.1 bash -s sudo rm -rf /var/www/html/*
+```
+
+#### Copy all files to client build files to server
+
+```bash
+scp -i ~/.ssh/identity-file.pem build/* ubuntu@10.0.0.1:/var/www/html/*
+```
